@@ -1,0 +1,25 @@
+{
+  "name": "Redis",
+  "id": "redis",
+  "available": true,
+  "no_gui": true,
+  "short_desc": "Redis in a container",
+  "author": "Redis Team",
+  "port": 6379,
+  "categories": [
+    "utilities"
+  ],
+  "description": "Redis is an in-memory data structure store, used as a database, cache and message broker.",
+  "tipi_version": 1,
+  "version": "8.0.2-alpine",
+  "source": "https://github.com/redis/redis",
+  "exposable": true,
+  "supported_architectures": [
+    "arm64",
+    "amd64"
+  ],
+  "created_at": 1745082405284,
+  "updated_at": 1745674974072,
+  "dynamic_config": true,
+  "form_fields": []
+}

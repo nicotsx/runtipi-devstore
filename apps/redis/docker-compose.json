@@ -1,0 +1,10 @@
+{
+  "services": [
+    {
+      "name": "redis",
+      "image": "redis:8.0.2-alpine",
+      "isMain": true,
+      "internalPort": 6379
+    }
+  ]
+}
