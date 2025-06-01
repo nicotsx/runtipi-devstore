@@ -4,12 +4,16 @@
     {
       "name": "redis",
       "image": "redis:8.0.2-alpine",
+      "command": [
+        "redis-server",
+        "/usr/local/etc/redis/redis.conf"
+      ],
       "isMain": true,
       "internalPort": 6379,
       "volumes": [
         {
-          "hostPath": "${APP_DATA_DIR}/data/redis.conf",
-          "containerPath": "/usr/local/etc/redis/redis.conf"
+          "hostPath": "${APP_DATA_DIR}/data",
+          "containerPath": "/usr/local/etc/redis"
         }
       ]
     }
